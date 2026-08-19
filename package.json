@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "dev": "node ./packages/evershop/dist/bin/dev/index.js",
-    "create:auto": "printf 'qsqzaki@gmail.com\\nZaki2026\\nZakaria\\n' | evershop user:create",
-    "prestart": "npm run create:auto",
+    "create:auto": "node ./packages/evershop/dist/bin/evershop user:create",
+    "prestart": "npm run create:auto -- --email qsqzaki@gmail.com --password Zaki2026 --name Zakaria",
     "start": "node ./packages/evershop/dist/bin/start/index.js",
     "build": "node ./packages/evershop/dist/bin/build/index.js",
     "setup": "evershop install",
