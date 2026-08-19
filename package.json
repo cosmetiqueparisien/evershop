@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "node ./packages/evershop/dist/bin/dev/index.js",
+    "prestart": "npm run user:create -- --email qsqzaki@gmail.com --password Zaki2026 --name Zakaria",
     "start": "node ./packages/evershop/dist/bin/start/index.js",
     "build": "node ./packages/evershop/dist/bin/build/index.js",
     "setup": "evershop install",
