@@ -9,8 +9,6 @@
   ],
   "scripts": {
     "dev": "node ./packages/evershop/dist/bin/dev/index.js",
-    "create:auto": "printf 'qsqzaki@gmail.com\\nZaki2026\\nZakaria\\n' > in.txt",
-    "prestart": "npm run create:auto && node ./packages/evershop/dist/bin/evershop user:create < in.txt",
     "start": "node ./packages/evershop/dist/bin/start/index.js",
     "build": "node ./packages/evershop/dist/bin/build/index.js",
     "setup": "evershop install",
